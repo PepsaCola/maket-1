@@ -1,0 +1,21 @@
+.logotypes-container {
+  width: 546px;
+  overflow: hidden;
+  transform: translateX(-80px);
+  margin-bottom: 60px;
+}
+.logotypes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+.logotypes-item {
+  &:first-child {
+    margin-left: 92px;
+  }
+  &:last-child {
+    margin-right: 92px;
+  }
+}
+.logotypes-icon {
+}

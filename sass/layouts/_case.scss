@@ -1,0 +1,40 @@
+.case-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.case-title {
+}
+.case-list {
+  width: 1000px;
+
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+  height: 252px;
+  margin-top: 40px;
+}
+.case-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background: #191a23;
+  border-radius: 45px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 350px;
+}
+.case-text {
+  color: white;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  margin-bottom: 20px;
+}
+.case-link {
+  color: #b9ff66;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+}

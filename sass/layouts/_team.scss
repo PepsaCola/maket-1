@@ -1,0 +1,91 @@
+.team-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.team-title {
+  margin: 0;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-item {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white;
+  box-shadow: 0px 5px 0px #191a23;
+  border-radius: 45px;
+  overflow: hidden;
+  border: 1px #191a23 solid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+.team-icon {
+  position: relative;
+  z-index: 1;
+}
+.team-list-title {
+  margin-bottom: 3px;
+  display: inline;
+}
+.team-list-subtitle {
+}
+.team-list-text {
+  padding-top: 20px;
+  border-top: 1px solid #000;
+}
+.team-button {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #191a23;
+  border-radius: 14px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  width: 100%;
+}
+.team-shadow {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  z-index: 0;
+  fill: #231f20;
+}
+.team-icon-wrap {
+  position: relative;
+  padding-right: 8px;
+  padding-bottom: 5px;
+}
+.team-title-wrap {
+  margin-top: auto;
+  width: 132px;
+}
+.team-lin-icon {
+  width: 17px;
+  height: 17px;
+
+  fill: #b9ff66;
+  margin-top: 8px;
+  margin-left: 9px;
+}
+.team-lin-link {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: black;
+  border-radius: 9999px;
+  top: 40px;
+  right: 50px;
+}

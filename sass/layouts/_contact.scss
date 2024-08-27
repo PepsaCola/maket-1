@@ -1,0 +1,121 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+.contact-title {
+}
+.contact-wrap {
+  margin-top: 40px;
+}
+.contact-form {
+}
+.contact-form-wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #f3f3f3;
+  border-radius: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.radio-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 46px;
+}
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 29px;
+  border: 1px black solid;
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    .radio-input:checked ~ & {
+      display: block;
+    }
+  }
+}
+
+.radio-label {
+  font-size: 16px;
+
+  display: block;
+  position: relative;
+  padding-left: 42px;
+
+  cursor: pointer;
+  & .checkmark::after {
+    top: 6px;
+    left: 6px;
+    width: 16px;
+    height: 16px;
+    background: #b9ff66;
+    border-radius: 9999px;
+  }
+}
+.text-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.text-input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background: white;
+  border-radius: 14px;
+  border: 1px black solid;
+  outline: none;
+  display: inline-block;
+}
+.textarea-input {
+  width: 100%;
+  height: 132px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background: white;
+  border-radius: 14px;
+  resize: none;
+  border: 1px black solid;
+}
+
+.form-input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-btn {
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #191a23;
+  border-radius: 14px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
