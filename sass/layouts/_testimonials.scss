@@ -3,8 +3,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include desctop {
+    justify-content: start;
+  }
 }
 .testimonials-title {
+}
+.testimonials-title-text {
+  @include desctop {
+    width: 473px;
+    margin-left: 40px;
+    text-align: left;
+  }
 }
 .testimonials-wrap {
   padding-top: 30px;

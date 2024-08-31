@@ -1,7 +1,10 @@
 .nav-container {
-  padding-top: 30px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  @include desctop {
+    justify-content: start;
+  }
 }
 .logo-link {
   width: 144px;
@@ -9,21 +12,56 @@
 .logo-icon {
   width: 144px;
   height: 24px;
+  @include desctop {
+    width: 219.54px;
+    height: 36px;
+    margin: auto 0;
+    margin-right: auto;
+  }
 }
 .nav {
   display: none;
+  @include desctop {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: 40px;
+  }
 }
 .nav-list {
+  display: flex;
+
+  gap: 40px;
 }
 .nav-item {
+  color: black;
+  font-size: 20px;
+  line-height: 28px;
 }
 .nav-btn {
   display: none;
+  @include desctop {
+    display: block;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 14px;
+    border: 1px #191a23 solid;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    background-color: transparent;
+  }
 }
 
 .open-menu-btn {
   border: none;
   background-color: transparent;
+  @include desctop {
+    display: none;
+  }
 }
 .open-menu-icon {
 }

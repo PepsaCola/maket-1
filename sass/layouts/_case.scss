@@ -4,17 +4,43 @@
   flex-wrap: wrap;
   margin-top: 60px;
   margin-bottom: 60px;
+  @include desctop {
+    justify-content: start;
+  }
 }
 .case-title {
+  @include desctop {
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+.case-title-text {
+  @include desctop {
+    font-size: 18px;
+    width: 580px;
+    text-align: start;
+  }
 }
 .case-list {
   width: 1000px;
-
   overflow: hidden;
   overflow-x: scroll;
   gap: 20px;
   height: 252px;
   margin-top: 40px;
+  @include desctop {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #191a23;
+    border-radius: 45px;
+    width: 100%;
+    display: flex;
+    gap: 129px;
+    height: auto;
+    overflow: auto;
+  }
 }
 .case-item {
   padding-left: 50px;
@@ -23,18 +49,44 @@
   padding-bottom: 42px;
   background: #191a23;
   border-radius: 45px;
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   width: 350px;
+  @include desctop {
+    background: none;
+    text-align: start;
+    padding: 0;
+    width: 286px;
+    &:not(:first-child):before {
+      content: " ";
+      position: absolute;
+      display: inline-block;
+      left: -64px;
+      width: 1px;
+      height: 100%;
+      background-color: white;
+    }
+  }
 }
+
 .case-text {
   color: white;
   font-size: 16px;
   line-height: calc(24 / 16);
   margin-bottom: 20px;
+  @include desctop {
+    font-size: 18px;
+  }
 }
 .case-link {
   color: #b9ff66;
   font-size: 20px;
   line-height: calc(28 / 20);
+  text-decoration: none;
+  text-align: end;
+}
+.case-icon {
+  margin-left: 15px;
+  fill: #b9ff66;
 }

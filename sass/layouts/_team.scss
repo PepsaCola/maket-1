@@ -4,15 +4,29 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  @include desctop {
+    display: block;
+  }
 }
 .team-title {
   margin: 0;
 }
-
+.team-title-text {
+  @include desctop {
+    display: inline-block;
+    width: 473px;
+    margin-left: 40px;
+    text-align: start;
+  }
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include desctop {
+    margin-top: 80px;
+    gap: 40px;
+  }
 }
 .team-item {
   padding-left: 35px;
@@ -28,6 +42,10 @@
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
+  @include desctop {
+    width: calc((100% - 80px) / 3);
+    box-sizing: border-box;
+  }
 }
 .team-icon {
   position: relative;
@@ -55,6 +73,12 @@
   font-size: 20px;
   line-height: calc(28 / 20);
   width: 100%;
+  @include desctop {
+    width: 269px;
+    margin-left: auto;
+    margin-top: 40px;
+    display: block;
+  }
 }
 .team-shadow {
   position: absolute;
@@ -88,4 +112,7 @@
   border-radius: 9999px;
   top: 40px;
   right: 50px;
+  @include desctop {
+    right: 35px;
+  }
 }

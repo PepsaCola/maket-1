@@ -3,22 +3,33 @@
   flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 60px;
+  @include desctop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 231px 112px 68px;
+    grid-gap: 35px 109px;
+  }
 }
 .hero-title {
   color: black;
   font-size: 43px;
   font-weight: 500;
   margin-bottom: 10px;
+  @include desctop {
+    width: 531px;
+    font-size: 60px;
+  }
 }
 .hero-text {
   order: 1;
   color: black;
   font-size: 16px;
-  font-family: Space Grotesk;
-  font-weight: 400;
   line-height: 24px;
   margin-top: 20px;
   margin-bottom: 40px;
+  @include desctop {
+    font-size: 20px;
+  }
 }
 .hero-btn {
   order: 1;
@@ -31,8 +42,19 @@
   color: white;
   font-size: 20px;
   line-height: 28px;
+  @include desctop {
+    width: 264px;
+  }
 }
 .hero-img {
   width: 361.44px;
   height: 310px;
+  @include desctop {
+    width: 600.46px;
+    height: 515px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }

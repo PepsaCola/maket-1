@@ -8,4 +8,7 @@
   border-radius: 7px;
   display: inline;
   margin-bottom: 30px;
+  @include desctop {
+    font-size: 40px;
+  }
 }

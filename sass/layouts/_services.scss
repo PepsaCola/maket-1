@@ -2,8 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include desctop {
+    justify-content: start;
+  }
 }
 .services-title {
+  @include desctop {
+    margin-right: 40px;
+  }
+}
+.service-title-text {
+  @include desctop {
+    width: 580px;
+    text-align: start;
+  }
 }
 .services-list {
   display: flex;
@@ -11,6 +23,11 @@
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
+  @include desctop {
+    gap: 40px;
+    justify-content: start;
+    width: 100%;
+  }
 }
 .services-item {
   padding: 50px;
@@ -38,6 +55,15 @@
     }
     & .services-item-link {
       background: #ffffff;
+    }
+  }
+
+  @include desctop {
+    width: calc((100% - 40px) / 2);
+    box-sizing: border-box;
+    display: flex;
+    &:last-child .services-item-title {
+      background-color: #b9ff66;
     }
   }
 }
@@ -76,14 +102,29 @@
   background: #f3f3f3;
   border-radius: 45px;
   margin-top: 70px;
+  @include desctop {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 60px;
+  }
 }
 .add-title {
   font-size: 26px;
   font-weight: 500;
+  @include desctop {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
 }
 .add-text {
   font-size: 16px;
   line-height: calc(24 / 16);
+  @include desctop {
+    width: 500px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 .add-btn {
   padding-left: 35px;
@@ -98,10 +139,22 @@
   font-size: 20px;
   line-height: calc(28 / 20);
 }
-.add-icon {
+.serv-add-img {
   display: none;
+  @include desctop {
+    display: block;
+    position: absolute;
+    top: -23.5px;
+    right: 135px;
+    width: 359px;
+    height: 394.27px;
+  }
 }
 .services-img {
   margin-left: auto;
   margin-top: 27px;
+  width: 210px;
+  height: 166px;
+}
+.services-title-wrap {
 }

@@ -3,18 +3,34 @@
   overflow: hidden;
   transform: translateX(-80px);
   margin-bottom: 60px;
+  @include desctop {
+    transform: translateX(0);
+    overflow: visible;
+    width: 1240px;
+  }
 }
 .logotypes-list {
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
+  @include desctop {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 .logotypes-item {
   &:first-child {
     margin-left: 92px;
+    @include desctop {
+      margin: 0;
+    }
   }
   &:last-child {
     margin-right: 92px;
+    @include desctop {
+      margin: 0;
+    }
   }
 }
 .logotypes-icon {
