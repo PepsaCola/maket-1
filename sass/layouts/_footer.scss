@@ -8,22 +8,49 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 37px;
+  @include desctop {
+    box-sizing: border-box;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    justify-content: start;
+    gap: 0;
+    column-gap: 155px;
+  }
 }
 .footer-logo-link {
   margin-bottom: 37px;
+  @include desctop {
+    order: -1;
+  }
 }
 .footer-logo-icon {
   display: block;
   fill: white;
+  @include desctop {
+    width: 180px;
+    height: 29px;
+  }
 }
 .header-nav {
   width: 100%;
+  @include desctop {
+    width: auto;
+    order: -1;
+  }
 }
 .header-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  @include desctop {
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
 }
 .header-item {
   width: 100%;
@@ -32,6 +59,12 @@
   color: white;
   font-size: 16px;
   line-height: calc(24 / 16);
+  @include desctop {
+    width: auto;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
 }
 .footer-address {
   display: flex;
@@ -39,6 +72,16 @@
   flex-wrap: wrap;
   gap: 15px;
   font-style: normal;
+  @include desctop {
+    width: 332px;
+    justify-content: left;
+  }
+}
+.footer-address-wrap {
+  text-align: center;
+  @include desctop {
+    text-align: left;
+  }
 }
 .footer-address-title {
   padding-left: 7px;
@@ -49,12 +92,16 @@
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
+  margin-bottom: 37px;
 }
 .footer-address-text {
   text-align: center;
   color: white;
   font-size: 16px;
   width: 100%;
+  @include desctop {
+    text-align: left;
+  }
 }
 .footer-address-link {
   text-decoration: none;
@@ -68,13 +115,16 @@
   padding: 30px;
   background: #292a32;
   border-radius: 14px;
-  width: 100%;
+  @include desctop {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    width: 633px;
+    box-sizing: border-box;
+  }
 }
-.foot-label {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
+
 .foot-input {
   width: 100%;
   padding-left: 25px;
@@ -88,6 +138,13 @@
   background-color: transparent;
   outline: none;
   border: 1px white solid;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+  @include desctop {
+    display: inline-block;
+    width: 285px;
+    margin-bottom: 0;
+  }
 }
 .foot-btn {
   width: 100%;
@@ -100,11 +157,20 @@
   text-align: center;
   color: black;
   font-size: 20px;
-  line-height: calc(28 / 20);
+  line-height: calc(28 / 19);
+  @include desctop {
+    width: 249px;
+    font-size: 19px;
+    display: inline-block;
+    margin-left: 14px;
+  }
 }
 .footer-icon-list {
   display: flex;
   gap: 20px;
+  @include desctop {
+    order: -1;
+  }
 }
 .footer-icon-item {
 }
@@ -130,12 +196,22 @@
   padding-top: 37px;
   border-top: 1px white solid;
   text-align: center;
+  @include desctop {
+    margin-top: 50px;
+    padding: 0;
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+  }
 }
 .copyright-text {
   margin-bottom: 15px;
   color: white;
   font-size: 16px;
   line-height: calc(24 / 16);
+  @include desctop {
+    margin: 0;
+  }
 }
 .copyright-link {
   color: white;

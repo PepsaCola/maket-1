@@ -23,10 +23,19 @@
   padding-right: 30px;
   background: #191a23;
   border-radius: 45px;
+  @include desctop {
+    width: 100%;
+    padding-top: 84px;
+  }
 }
 .testimonials-list {
+  display: flex;
+  justify-content: center;
 }
 .testimonials-item {
+  @include desctop {
+    width: 606px;
+  }
 }
 .testimonials-text {
   color: white;
@@ -49,11 +58,19 @@
   border: 2px #b9ff66 solid;
   padding: 30px;
   margin-bottom: 44px;
+  @include desctop {
+    padding: 48px 52px;
+  }
 }
 .testimonials-nav {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  @include desctop {
+    width: 564px;
+    margin: 0 auto;
+    margin-top: 124px;
+  }
 }
 .testimonials-arrow {
   width: 20px;

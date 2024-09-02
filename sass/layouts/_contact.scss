@@ -3,13 +3,36 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 60px;
+  @include desctop {
+    justify-content: start;
+    margin-bottom: 140px;
+    overflow: hidden;
+  }
 }
 .contact-title {
 }
-.contact-wrap {
-  margin-top: 40px;
+.contact-title-text {
+  @include desctop {
+    width: 323px;
+    margin-left: 40px;
+    text-align: left;
+  }
 }
 .contact-form {
+  margin-top: 40px;
+  @include desctop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #f3f3f3;
+    border-radius: 45px;
+    width: 100%;
+    position: relative;
+  }
 }
 .contact-form-wrap {
   padding-top: 40px;
@@ -20,6 +43,12 @@
   border-radius: 45px;
   display: flex;
   flex-wrap: wrap;
+  @include desctop {
+    padding: 0;
+    background: none;
+    border: none;
+    display: block;
+  }
 }
 .radio-wrap {
   width: 100%;
@@ -28,6 +57,9 @@
   align-items: center;
   gap: 60px;
   margin-bottom: 46px;
+  @include desctop {
+    justify-content: start;
+  }
 }
 .radio-input {
   position: absolute;
@@ -59,6 +91,9 @@
   display: block;
   position: relative;
   padding-left: 42px;
+  @include desctop {
+    font-size: 18px;
+  }
 
   cursor: pointer;
   & .checkmark::after {
@@ -73,6 +108,11 @@
 .text-label {
   font-size: 14px;
   margin-bottom: 10px;
+  @include desctop {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 .text-input {
   width: 100%;
@@ -86,6 +126,12 @@
   border: 1px black solid;
   outline: none;
   display: inline-block;
+  @include desctop {
+    width: 556px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    height: 59px;
+  }
 }
 .textarea-input {
   width: 100%;
@@ -98,11 +144,19 @@
   border-radius: 14px;
   resize: none;
   border: 1px black solid;
+  @include desctop {
+    width: 556px;
+    height: 190px;
+    box-sizing: border-box;
+  }
 }
 
 .form-input-wrap {
   display: flex;
   flex-wrap: wrap;
+  @include desctop {
+    display: block;
+  }
 }
 .contact-btn {
   width: 100%;
@@ -118,4 +172,18 @@
   line-height: calc(28 / 20);
   margin-top: 30px;
   margin-bottom: 90px;
+  @include desctop {
+    margin-top: 40px;
+    width: 556px;
+    margin-bottom: 0;
+  }
+}
+.contact-img {
+  position: absolute;
+  display: none;
+  @include desctop {
+    display: block;
+    right: -324px;
+    top: 62.5px;
+  }
 }
